@@ -195,21 +195,95 @@ font-family: 'Ubuntu', sans-serif;
 /*camperas*/
 
 .mainCamperas {
-    margin: 10px 0px 0px 600px;
+   display: grid;
+  justify-content: center;
+
+
+ }
+
+.tittleCamperas{
+    display: grid;
+    justify-content: center;
+    margin: 50px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.imgCamperas1 {
+.camperasSection{
+    display: grid;
+    justify-items: center;
+    grid-template-areas: 
+    "imgC1 imgC2"
+    "nameC1 nameC2"
+    "priceC1 priceC2"
+    "imgC3 imgC4"
+    "nameC3 nameC4"
+    "priceC3 priceC4";
+    grid-row-gap: 50px;
+    grid-column-gap: 100px;
+    }
 
+
+.imgCamperas1 {
+grid-area: imgC1;
     width: 250px;
-    margin: 60px 200px 0px 200px;
+
 }
 
 .imgCamperas2 {
+    grid-area: imgC2;
+   
     width: 250px;
-    margin: 0px 200px 0px 200px;
+   
 
 }
+
+.imgCamperas3 {
+    grid-area:imgC3 ;
+        width: 250px;
+       
+    }
+    
+    .imgCamperas4 {
+        grid-area:imgC4;
+        width: 250px;
+    }
+      
+    .name-product1{
+        grid-area:nameC1;
+        font-size: 1.5rem;
+    }
+    
+    .name-product2 {
+        grid-area:nameC2;
+        font-size: 1.5rem;
+    }
+    
+    .name-product3 {
+        grid-area:nameC3;
+        font-size: 1.5rem;
+    }
+    
+    .name-product4 {
+        grid-area:nameC4;
+        font-size: 1.5rem;
+    }
+    
+    
+    .product-price-home1{
+    grid-area: priceC1;
+    }
+    
+    .product-price-home2{
+        grid-area: priceC2;
+    }
+    
+    .product-price-home3{
+        grid-area: priceC3;
+    }
+    
+    .product-price-home4{
+        grid-area: priceC4;
+    }
 
 /*remeras*/
 
@@ -229,6 +303,7 @@ grid-template-areas:
 display: grid;
 justify-items: center;
 font-family: 'Ubuntu', sans-serif;
+margin: 50px;
 }
 
 .imgRemeron1 {
