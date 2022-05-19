@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/*reset*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(240, 240, 240, 0.815);
+}
+
+/*encabezado*/
+
+.promoEncabezado {
+    color: white;
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagen-encabezado {
+    background-color: white;
+    width: 10rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.navbar {
+    background-color: white;
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+}
+
+nav ul li a {
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*encabezado fin*/
+
+
+
+
+
+/*inicio main y presentacion*/
+
+.mainGridIndex {
+    display: grid;
+    justify-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.destacados-text {
+    display: grid;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.7rem;
+}
+
+
+
+
+/*inicio de destacados*/
+
+.sectionGrid{
+    display: grid;
+    grid-column-gap: 50px;
+grid-template-areas: "img1 img2"
+"name1 name2"
+"price1 price2"
+"img3 img4"
+"name3 name4"
+"price3 price4";
+
+}
+
+.imgProducto1 {
+width: 250px;
+grid-area: img1;
+}
+
+.imgProducto2 {
+    grid-area:img2;
+    width: 250px;  
+}
+
+.imgProducto3 {
+    grid-area: img3;
+ width: 250px;
+}
+.imgProducto4 {
+    grid-area:img4;
+    width: 250px;
+}
+
+.name-product1 {
+    grid-area:name1;
+    font-size: 1.5rem;
+}
+.name-product2 {
+  grid-area: name2;
+    font-size: 1.5rem;
+}
+.name-product3{
+  grid-area: name3;
+    font-size: 1.5rem;
+}
+.name-product4 {
+    grid-area:name4;
+    font-size: 1.5rem;
+}
+
+.product-price-home1{
+    grid-area: price1;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.product-price-home2{
+    grid-area: price2;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.product-price-home3{
+    grid-area: price3;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.product-price-home4{
+    grid-area: price4;
+    font-size: 1.4rem;
+    color: black;
+}
+/*fin de home*/
+
+
+/*link para ir a remeras o camperas*/
+
+.padreLinkImg {
+    display: inline-block;
+
+}
+
+.imgLinkRemeras {
+    margin: 40px 0px 40px 150px;
+}
+
+.imgLinkCamperas {
+    margin: 40px 0px 40px 150px;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: grey;
+    display: grid;
+    justify-items: end;
+}
+
+.derechos {
+    background-color: grey;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/*productos*/
+
+.mainProductos{
+display: flex;
+justify-content: center;
+margin: 15px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+/*camperas*/
+
+.mainCamperas {
+    margin: 10px 0px 0px 600px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.imgCamperas1 {
+
+    width: 250px;
+    margin: 60px 200px 0px 200px;
+}
+
+.imgCamperas2 {
+    width: 250px;
+    margin: 0px 200px 0px 200px;
+
+}
+
+/*remeras*/
+
+.mainRemeras {
+    display: grid;
+    justify-items: center;
+grid-template-areas: 
+"imgR1 imgR2"
+"nameR1 nameR2"
+"priceR1 priceR2"
+"imgR3 imgR4"
+"nameR3 nameR4"
+"priceR3 priceR4";
+}
+
+.h1Remeras{
+display: grid;
+justify-items: center;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.imgRemeron1 {
+grid-area:imgR1 ;
+    width: 250px;
+   
+}
+
+.imgRemeron2 {
+    grid-area:imgR2;
+    width: 250px;
+}
+
+.imgRemeron3 {
+    grid-area:imgR3;
+    width: 250px;
+}
+.imgRemeron4 {
+    grid-area:imgR4;
+    width: 250px;
+}
+
+.name-tShirt1 {
+    grid-area:nameR1;
+    font-size: 1.5rem;
+}
+
+.name-tShirt2 {
+    grid-area:nameR2;
+    font-size: 1.5rem;
+}
+
+.name-tShirt3 {
+    grid-area:nameR3;
+    font-size: 1.5rem;
+}
+
+.name-tShirt4 {
+    grid-area:nameR4;
+    font-size: 1.5rem;
+}
+
+
+.product-price-home1{
+grid-area: priceR1;
+}
+
+.product-price-home2{
+    grid-area: priceR2;
+}
+
+.product-price-home3{
+    grid-area: priceR3;
+}
+
+.product-price-home4{
+    grid-area: priceR4;
+}
+
+
+
+
+/*stores*/
+
+.mainStores {
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 40px;
+}
+
+.imgStore {
+    margin: 0px 0px 0px 50px;
+}
+
+/*login*/
+
+.mainLogin{
+display: grid;
+justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+}
+
+form{
+margin: 150px 40px 200px 0px; 
+}
+
+.text0Form{
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+.text1Form{
+    font-size: 2rem;
+}
+
+.text2Form{
+    font-size: 2rem;
+}
+
+.sendForm{
+    font-size: 1.5rem;
+}
+
+
+/* mq */
+
+@media screen and (max-width: 500px) {
+
+
+
+/*encabezado*/
+
+.promoEncabezado {
+    font-size: medium;
+}
+
+.imagen-encabezado {
+    width: 7rem;
+}
+
+nav ul li a {
+    font-size: 1rem;
+}
+/*fin encabezado*/
+
+/*main*/
+
+.mainGridIndex {
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+
+.destacados-text {
+    display: grid;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+/*destacados*/
+
+.sectionGrid{
+display: grid;
+grid-row-gap: 5px;
+grid-template-areas: "img1"
+"name1"
+"price1"
+"img2"
+"name2"
+"price2"
+"img3"
+"name3"
+"price3"
+"img4"
+"name4"
+"price4";
+}
+
+.imgProducto1 {
+width: 200px;
+}
+
+.imgProducto2 {
+width: 200px;  
+}
+
+.imgProducto3 {
+ width: 200px;
+}
+.imgProducto4 {
+width: 200px;
+}
+
+.name-product1 {
+font-size: 1.4rem;
+}
+
+.name-product2 {
+font-size: 1.4rem;
+}
+
+.name-product3{
+    font-size: 1.4rem;
+}
+
+.name-product4 {
+    font-size: 1.4rem;
+}
+
+.product-price-home1{
+    font-size: 1.3rem;
+    margin: 0px 0px 40px 0px;
+}
+
+.product-price-home2{
+    font-size: 1.3rem;
+    margin: 0px 0px 40px 0px;
+}
+
+.product-price-home3{
+    font-size: 1.3rem;
+    margin: 0px 0px 40px 0px;
+}
+
+.product-price-home4{
+    font-size: 1.3rem;
+    margin: 0px 0px 40px 0px;
+}
+/*fin de destacados*/
+
+/*footer*/
+
+footer {
+    background-color: grey;
+    display: grid;
+    justify-items: center;
+}
+
+.derechos {
+    background-color: grey;
+    color: black;
+    font-size: 0.9rem;
+}
+/*fin de footer*/
+
+
+
+/*pag de remeras*/
+
+.mainRemeras {
+    display: grid;
+    justify-content: center;
+grid-template-areas: 
+"imgR1"
+"nameR1"
+"priceR1"
+"imgR2"
+"nameR2"
+"price2"
+"imgR3"
+"nameR3"
+"priceR3"
+"imgR4"
+"nameR4"
+"priceR4";
+
+
+}
+
+.h1Remeras{
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+.imgRemeron1 {
+    width: 200px; 
+}
+
+.imgRemeron2 {
+    width: 200px;
+}
+
+.imgRemeron3 {
+    width: 200px;
+}
+.imgRemeron4 {
+    width: 200px;
+}
+
+.name-tShirt1 {
+    font-size: 1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.name-tShirt2 {
+    font-size: 1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.name-tShirt3 {
+    font-size: 1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.name-tShirt4 {
+    font-size: 1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.product-price-home1{
+    font-size: 1.3rem;
+}
+
+.product-price-home2{
+    font-size: 1.3rem;
+}
+
+.product-price-home3{
+    font-size: 1.3rem;
+}
+
+.product-price-home4{
+    font-size: 1.3rem;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
