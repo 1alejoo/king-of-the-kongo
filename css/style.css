@@ -41,13 +41,19 @@ nav {
     gap: 1.3rem;
 }
 
-nav ul li a {
+
+.headerLinks {
     background-color: white;
     text-decoration: none;
     font-size: 1.2rem;
     color: black;
     font-family: 'Ubuntu', sans-serif;
 }
+
+.headerLinks:hover{
+    color: red;
+}
+
 
 /*encabezado fin*/
 
@@ -181,6 +187,10 @@ footer {
     font-size: 1.2rem;
 }
 
+.imgFooter{
+margin: 0px 800px 0px 0px ;
+}
+
 /*productos*/
 
 .mainProductos{
@@ -306,15 +316,44 @@ grid-area: priceR1;
 
 /*login*/
 
+
 .mainLogin{
-display: grid;
+display: flex;
 justify-content: center;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
+    margin: 40px;
 }
 
+.imgLogin{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 100px 0px 0px
+}
+
+.imgLogin1{
+    width: 13%;
+    animation-name: girar;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0);
+    }
+    
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
 form{
-margin: 150px 40px 200px 0px; 
+display: flex;
+justify-content: center;
+margin: 40px 0px 150px 0px ;
 }
 
 .text0Form{
@@ -456,6 +495,11 @@ footer {
     color: black;
     font-size: 0.9rem;
 }
+
+
+
+
+
 /*fin de footer*/
 
 
