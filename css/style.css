@@ -9,10 +9,14 @@
 }
 
 body{
-    background-color: rgba(240, 240, 240, 0.815);
+    background-color: rgba(206, 203, 203, 0.507);
 }
 
 /*encabezado*/
+
+.encabezado{
+    background-color: white;
+}
 
 .promoEncabezado {
     color: white;
@@ -205,21 +209,84 @@ font-family: 'Ubuntu', sans-serif;
 /*camperas*/
 
 .mainCamperas {
-    margin: 10px 0px 0px 600px;
-    font-family: 'Ubuntu', sans-serif;
+    display: grid;
+    justify-items: center;
+grid-template-areas: 
+"imgC1 imgC2"
+"nameC1 nameC2"
+"priceC1 priceC2"
+"imgC3 imgC4"
+"nameC3 nameC4"
+"priceC3 priceC4";
+}
+
+.h1Camperas{
+display: grid;
+justify-items: center;
+font-family: 'Ubuntu', sans-serif;
 }
 
 .imgCamperas1 {
-
+grid-area:imgC1 ;
     width: 250px;
-    margin: 60px 200px 0px 200px;
+   
 }
 
 .imgCamperas2 {
+    grid-area:imgC2;
     width: 250px;
-    margin: 0px 200px 0px 200px;
-
 }
+
+.imgCamperas3 {
+    grid-area:imgC3;
+    width: 250px;
+}
+.imgCamperas4 {
+    grid-area:imgC4;
+    width: 250px;
+}
+
+.name-Campera1 {
+    grid-area:nameC1;
+    font-size: 1.5rem;
+}
+
+.name-Campera2 {
+    grid-area:nameC2;
+    font-size: 1.5rem;
+}
+
+.name-Campera3 {
+    grid-area:nameC3;
+    font-size: 1.5rem;
+}
+
+.name-Campera4 {
+    grid-area:nameC4;
+    font-size: 1.5rem;
+}
+
+
+.product-price1{
+grid-area: priceC1;
+font-size: 1.4rem;
+}
+
+.product-price2{
+    grid-area: priceC2;
+    font-size: 1.4rem;
+}
+
+.product-price3{
+    grid-area: priceC3;
+    font-size: 1.4rem;
+}
+
+.product-price4{
+    grid-area: priceC4;
+    font-size: 1.4rem;
+}
+
 
 /*remeras*/
 
