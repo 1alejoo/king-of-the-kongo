@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/img-page.jpg">
     <link rel="stylesheet" href="../css/style.css">
     <title>Login</title>
@@ -24,40 +26,62 @@
                 <li><a class="headerLinks" href="../index.html">HOME</a></li>
                 <li><a class="headerLinks" href="login.html">LOGIN</a></li>
             </ul>
-            
+
         </nav>
     </header>
 
-<main>
-    <h1  class="mainLogin">Inicia Sesión</h1>
+    <main>
 
-<div class="imgLogin">
-    <img src="../img/loginImg.png" alt="monkey" class="imgLogin1">
-</div>
+        <h1 class="h1Login">INICIA SESIÓN</h1>
+        <section class="loginSection">
+            <div class="imgLogin">
+                <img src="../img/loginImg.png" alt="monkey" class="imgLogin1">
+            </div>
 
-    <form>
-        <fieldset>
-            <div class="form">
-                <label for="usuario" class="text1Form">Email</label>
-                <input type="mail" name="usuario" class="">
+            <form class="form">
+                <fieldset>
+                    <div >
+                        <label for="usuario" class="text1Form">Email</label>
+                        <input type="mail" name="usuario" class="">
+                    </div>
+                    <div>
+                        <label for="contraseña" class="text2Form">Contraseña</label>
+                        <input type="text" name="contraseña">
+                    </div>
+
+                    <input type="submit" value="Enviar" class="sendForm">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div>
+            <p class="derechos">&copy todos los derechos reservados.king of the kongo-2022.diseño por Alejo Alvarez</p>
+        </div>
+
+        <section class="sectionFooter">
+            
+            <div class="imgFooter">
+                <img src="../img/footer.gif" alt="imgFooter">
             </div>
+
             <div>
-                <label for="contraseña" class="text2Form">Contraseña</label>
-                <input type="text" name="contraseña">
+                <nav class="navFooter">
+                    <ul>
+                        <li><a class="footerLinks" href="./productos.html">Productos</a></li>
+                        <li><a class="footerLinks" href="./remeras.html">Remeras</a></li>
+                        <li><a class="footerLinks" href="./camperas.html">Camperas</a></li>
+                        <li><a class="footerLinks" href="./stores.html">Tiendas</a></li>
+                        <li><a class="footerLinks" href="../index.html">Home</a></li>
+                    </ul>
+                </nav>
             </div>
-          
-            <input type="submit" value="Enviar" class="sendForm">
-        </fieldset> 
-    </form>
-</main>
-        <footer>
-            <div>
-                <p class="derechos">&copy todos los derechos reservados.king of the kongo-2022.diseño por Alejo Alvarez</p>
-            </div>
-            <div>
-                <img  src="../img/footer.gif" alt="imgFooter" class="imgFooter">
-            </div>
-        </footer>
+        </section>
+
+
+    </footer>
+
 </body>
 
 </html>
