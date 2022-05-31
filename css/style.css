@@ -57,11 +57,10 @@ nav {
     font-size: 1.2rem;
     color: black;
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 .headerLinks:hover {
-color: blue;
+    color: blue;
     display: block;
 }
 
@@ -539,10 +538,10 @@ footer {
 }
 
 .send-Product {
+    display: flex;
     color: black;
     list-style: none;
     font-size: 2rem;
-    display: flex;
 
 }
 
