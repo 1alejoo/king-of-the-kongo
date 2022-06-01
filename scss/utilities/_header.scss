@@ -1,0 +1,45 @@
+.encabezado {
+    background-color: white;
+
+    .promoEncabezado {
+        color: white;
+        background-color: black;
+        font-family: $tipografia;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+
+
+        .imagen-encabezado {
+            background-color: white;
+            width: 10rem;
+        }
+
+        .navbar {
+            background-color: white;
+            list-style: none;
+            display: flex;
+            gap: 1.3rem;
+
+
+            .headerLinks {
+                background-color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: black;
+                font-family: $tipografia;
+            }
+
+            .headerLinks:hover {
+                color: blue;
+                display: block;
+            }
+        }
+    }
+}
