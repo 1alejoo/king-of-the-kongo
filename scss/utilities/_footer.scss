@@ -1,0 +1,30 @@
+footer {
+    background-color: grey;
+
+
+    .derechos {
+        background-color: grey;
+        color: black;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: end;
+
+    }
+
+    .sectionFooter {
+        display: flex;
+
+        .navFooter {
+            background-color: grey;
+
+
+            .footerLinks {
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                color: black;
+                font-size: 1.5rem;
+
+            }
+        }
+    }
+}
