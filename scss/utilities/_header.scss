@@ -1,0 +1,39 @@
+//encabezado
+
+.encabezado {
+    background-color: white; }
+  
+  .encabezado .promoEncabezado {
+    color: white;
+    background-color: black;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: space-around; }
+  
+  .encabezado .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white; }
+  
+  .encabezado .nav .imagen-encabezado {
+    background-color: white;
+    width: 9rem; }
+  
+  .encabezado .nav .navbar {
+    background-color: white;
+    list-style: none;
+    display: flex;
+    gap: 1.3rem; }
+  
+  .encabezado .nav .navbar .headerLinks {
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-family: "Ubuntu", sans-serif; }
+  
+  .encabezado .nav .navbar .headerLinks:hover {
+    color: grey;
+    display: block; }
+  
