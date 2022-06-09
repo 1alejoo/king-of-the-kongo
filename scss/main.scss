@@ -1,15 +1,16 @@
-//comentario en css}
 
-@import "utilities/variables";
-@import "./utilities/header";
+//scss
+
+@import "utilities/_footer";
+@import "utilities/_remeras";
+@import "utilities/_productos";
+@import "utilities/_camperas";
+@import "utilities/_variables";
+@import "./utilities/_header";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css");
 
 //nesting 
-
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
-
-
-
 
 /*reset*/
 
@@ -17,197 +18,260 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     background-color: rgba(206, 203, 203, 0.507);
+  }
+  
+  
+  /*encabezado*/
+  
+  .encabezado {
+    background-color: white;
+  }
+  
+  .encabezado .promoEncabezado {
+    color: white;
+    background-color: black;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .encabezado .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .encabezado .nav .imagen-encabezado {
+    background-color: white;
+    width: 9rem;
+  }
+  
+  .encabezado .nav .navbar {
+    background-color: white;
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+  }
+  
+  .encabezado .nav .navbar .headerLinks {
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
     color: black;
-}
-
-
-
-/*encabezado*/
-
-
-
-
-
-
-
-
-/*encabezado fin*/
-
-
-
-
-
-/*inicio main y presentacion*/
-
-.mainGridIndex {
-    display: grid;
-    justify-items: center;
-    font-family: $tipografia;
-}
-
-
-
-.destacados-text {
-    display: grid;
-
-    font-family: $tipografia;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .encabezado .nav .navbar .headerLinks:hover {
+    color: grey;
+    display: block;
+  }
+  
+  
+  /*Home*/
+  
+  .mainIndex{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .fondo1{
+    display: flex;
+    justify-content: space-around;
+    height: 50rem;
+  }
+  
+  .destacados-text {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Ubuntu", sans-serif;
     font-size: 2.7rem;
-}
-
-
-
-
-/*inicio de destacados*/
-
-.sectionGrid {
-    display: grid;
-    grid-row-gap: 50px;
-    grid-template-areas: "img1 img2"
-        "name1 name2"
-        "price1 price2"
-        "img3 img4"
-        "name3 name4"
-        "price3 price4";
-
-}
-
-
-
-.imgProducto1 {
-    margin: 40px 200px 0px 0px;
-    width: $with-de-productos;
-    grid-area: img1;
-}
-
-.imgProducto2 {
-    margin: 40px 0px 0px 0px;
-    grid-area: img2;
-    width: $with-de-productos;
-}
-
-.imgProducto3 {
-    grid-area: img3;
-    width: $with-de-productos;
-}
-
-.imgProducto4 {
-    grid-area: img4;
-    width: $with-de-productos;
-}
-
-.name-product1 {
-    grid-area: name1;
-    font-size: $nombre-de-productos;
-}
-
-.name-product2 {
-    grid-area: name2;
-    font-size:$nombre-de-productos;
-}
-
-.name-product3 {
-    grid-area: name3;
-    font-size: $nombre-de-productos;
-}
-
-.name-product4 {
-    grid-area: name4;
-    font-size: $nombre-de-productos;
-}
-
-.product-price-home1 {
-    grid-area: price1;
-    font-size: $precio-productos;
-    color: black;
-}
-
-.product-price-home2 {
-    grid-area: price2;
-    font-size: $precio-productos;
-    color: black;
-}
-
-.product-price-home3 {
-    grid-area: price3;
-    font-size: $precio-productos;
-    color: black;
-}
-
-.product-price-home4 {
-    grid-area: price4;
-    font-size: $precio-productos;
-    color: black;
-}
-
-/*fin de home*/
-
-
-/*productos*/
-
-.padreLinkImg {
+    margin: 50px 0px 10px 0px;
+  }
+  
+  /*inicio de destacados*/
+  
+  .container1H {
+    display: flex;
+  justify-content: space-around;
+  }
+  
+  .container2H {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .imgProducto {
+    width: 250px;
+  }
+  
+  .name-product {
+  
+    font-size: 1.5rem;
+  }
+  
+  .product-price-home1 {
+    font-size: 1.4rem;
+  }
+  
+  
+  /*productos*/
+  
+  .padreLinkImg {
     display: inline-block;
-
-}
-
-.imgLinkRemeras {
+  }
+  
+  .imgLinkProduct {
     margin: 40px 0px 40px 150px;
-}
-
-.imgLinkCamperas {
-    margin: 40px 0px 40px 150px;
-}
-
-.mainProductos {
+  }
+  
+  .mainProductos {
     display: flex;
     justify-content: center;
     margin: 15px;
-    font-family: $tipografia;
-}
-
-
-/*stores*/
-
-.mainStores {
-
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  /*footer*/
+  
+  footer {
+    background-color: grey;
+  }
+  
+  .titleFooter{
+  
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .sectionFooter {
+    display: flex;
+  }
+  
+  .navFooter {
+    background-color: grey;
+  }
+  
+  .footerLinks {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    
+  }
+  
+  .imgFooter {
+    height: 10rem;
+    margin: 0px 0px 0px 500px ;
+  
+  }
+  
+  .derechos {
+    background-color: grey;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: end;
+  }
+  
+  
+  /*camperas*/
+  
+  .h1Camperas {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px 10px 0px;
+    }
+  
+  .container1C {
+    display: flex;
+  justify-content: space-around;
+  }
+  
+  .container2C {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .imgCamperas {
+    width: 250px;
+  }
+  
+  .name-Campera {
+    font-size: 1.5rem;
+  }
+  
+  .product-price {
+    font-size: 1.4rem;
+  }
+  
+  
+  /*remeras*/
+  
+  .h1Remeras {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0px 10px 0px;
+  }
+  
+  
+  .container1R {
+    display: flex;
+  justify-content: space-around;
+  }
+  
+  .container2R {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .imgRemeron {
+    width: 250px;
+  }
+  
+  .name-product{
+    font-size: 1.5rem;
+  }
+  
+  .product-price{
+  font-size: 1.4rem;
+  }
+  
+  /*stores*/
+  .mainStores {
     display: flex;
     justify-content: center;
     margin: 15px;
-    font-family: $tipografia;
-}
-
-.map {
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .map {
     display: flex;
     justify-content: center;
     margin: 0px 0px 60px 0px;
-
-}
-
-.mapText {
+  }
+  
+  .mapText {
     display: flex;
     justify-content: center;
-
-}
-
-
-/*login*/
-
-.h1Login {
+  }
+  
+  /*login*/
+  .h1Login {
     display: grid;
     justify-content: center;
     font-size: 3.5rem;
     margin: 10px;
-}
-
-.loginSection {
+  }
+  
+  .loginSection {
     display: grid;
     grid-template-areas: "form img";
-}
-
-.imgLogin1 {
+  }
+  
+  .imgLogin1 {
     grid-area: img;
     margin: 0px 0px 0px 100px;
     width: 25%;
@@ -215,323 +279,291 @@ body {
     animation-duration: 9s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-}
-
-@keyframes girar {
+  }
+  
+  @keyframes girar {
     from {
-        transform: rotate(0);
+      transform: rotate(0);
     }
-
+  
     to {
-        transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
-
-
-.form {
+  }
+  
+  .form {
     grid-area: form;
     margin: 50px 0px 140px 400px;
-}
-
-.text0Form {
+  }
+  
+  .text0Form {
     font-size: 2rem;
     font-family: monospace;
-}
-
-.text1Form {
+  }
+  
+  .text1Form {
     font-size: 2rem;
-}
-
-.text2Form {
+  }
+  
+  .text2Form {
     font-size: 2rem;
-}
-
-.sendForm {
+  }
+  
+  .sendForm {
     font-size: 1.5rem;
-}
-
-/* fin de login*/
-
-/*productos*/
-
-.product {
+  }
+  
+  /* fin de login*/
+  
+  .product {
     display: grid;
-
-    grid-template-areas:
-        "img home"
-        "img home"
-        "img titulo"
-        "img titulo"
-        "img price"
-        "img price"
-        "img dues"
-        "img send";
+    grid-template-areas: "img home"
+      "img home"
+      "img titulo"
+      "img titulo"
+      "img price"
+      "img price"
+      "img dues"
+      "img send";
     margin: 60px 0px 0px 0px;
     grid-column-gap: 200px;
     grid-row-gap: 40px;
-}
-
-.divImgP {
+  }
+  
+  .divImgP {
     display: grid;
-    justify-items: end
-}
-
-.ProductoImgPage {
+    justify-items: end;
+  }
+  
+  .ProductoImgPage {
     grid-area: img;
     width: 450px;
-}
-
-
-
-.Atext {
+  }
+  
+  .Atext {
     grid-area: home;
     font-size: 1.3rem;
     margin: 40px 0px 15px 0px;
-}
-
-.Title {
+  }
+  
+  .Title {
     grid-area: titulo;
     font-size: 1.8rem;
     margin: 0px 0px 30px 0px;
     font-family: 'Ubuntu', sans-serif;
-    ;
-}
-
-.Price {
+  }
+  
+  .Price {
     grid-area: price;
     font-size: 1.9rem;
     margin: 0px 0px 35px 0px;
     font-family: 'Ubuntu', sans-serif;
-}
-
-.Dues {
+  }
+  
+  .Dues {
     color: red;
     grid-area: dues;
     font-size: 1.4rem;
     margin: 0px 0px 35px 0px;
-}
-
-.send-Product {
+  }
+  
+  .send-Product {
     display: flex;
     color: black;
     list-style: none;
     font-size: 2rem;
-
-}
-
-/* mq */
-
-@media screen and (max-width: 500px) {
-
-
-
-    /*encabezado*/
-
-    .promoEncabezado {
-        font-size: medium;
-    }
-
-    .imagen-encabezado {
-        width: 7rem;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    /*fin encabezado*/
-
-    /*main*/
-
-    .mainGridIndex {
-        display: grid;
-        justify-content: center;
-        margin: 10px;
-        gap: 10px;
-    }
-
-
-    .destacados-text {
-        display: grid;
-        justify-content: center;
-        font-size: 2rem;
-    }
-
-    /*destacados*/
-
-    .sectionGrid {
-        display: grid;
-        grid-row-gap: 5px;
-        grid-template-areas: "img1"
-            "name1"
-            "price1"
-            "img2"
-            "name2"
-            "price2"
-            "img3"
-            "name3"
-            "price3"
-            "img4"
-            "name4"
-            "price4";
-    }
-
-    .imgProducto1 {
-        width: 200px;
-    }
-
-    .imgProducto2 {
-        width: 200px;
-    }
-
-    .imgProducto3 {
-        width: 200px;
-    }
-
-    .imgProducto4 {
-        width: 200px;
-    }
-
-    .name-product1 {
-        font-size: 1.4rem;
-    }
-
-    .name-product2 {
-        font-size: 1.4rem;
-    }
-
-    .name-product3 {
-        font-size: 1.4rem;
-    }
-
-    .name-product4 {
-        font-size: 1.4rem;
-    }
-
-    .product-price-home1 {
-        font-size: 1.3rem;
-        margin: 0px 0px 40px 0px;
-    }
-
-    .product-price-home2 {
-        font-size: 1.3rem;
-        margin: 0px 0px 40px 0px;
-    }
-
-    .product-price-home3 {
-        font-size: 1.3rem;
-        margin: 0px 0px 40px 0px;
-    }
-
-    .product-price-home4 {
-        font-size: 1.3rem;
-        margin: 0px 0px 40px 0px;
-    }
-
-    /*fin de destacados*/
-
-    /*footer*/
-
-    footer {
-        background-color: grey;
-        display: grid;
-        justify-items: center;
-    }
-
-    .derechos {
-        background-color: grey;
-        color: black;
-        font-size: 0.9rem;
-    }
-
-
-
-
-
-    /*fin de footer*/
-
-
-
+  }
+  
     /*pag de remeras*/
-
     .mainRemeras {
-        display: grid;
-        justify-content: center;
-        grid-template-areas:
-            "imgR1"
-            "nameR1"
-            "priceR1"
-            "imgR2"
-            "nameR2"
-            "price2"
-            "imgR3"
-            "nameR3"
-            "priceR3"
-            "imgR4"
-            "nameR4"
-            "priceR4";
-
-
+      display: grid;
+      justify-content: center;
+      grid-template-areas: "imgR1"
+        "nameR1"
+        "priceR1"
+        "imgR2"
+        "nameR2"
+        "price2"
+        "imgR3"
+        "nameR3"
+        "priceR3"
+        "imgR4"
+        "nameR4"
+        "priceR4";
     }
-
+  
     .h1Remeras {
-        display: grid;
-        justify-content: center;
-        margin: 10px;
-        gap: 10px;
+      display: grid;
+      justify-content: center;
+      margin: 10px;
+      gap: 10px;
     }
-
+  
     .imgRemeron1 {
-        width: 200px;
+      width: 200px;
     }
-
+  
     .imgRemeron2 {
-        width: 200px;
+      width: 200px;
     }
-
+  
     .imgRemeron3 {
-        width: 200px;
+      width: 200px;
     }
-
+  
     .imgRemeron4 {
-        width: 200px;
+      width: 200px;
     }
-
+  
     .name-tShirt1 {
-        font-size: 1.4rem;
-        font-family: 'Ubuntu', sans-serif;
+      font-size: 1.4rem;
+      font-family: 'Ubuntu', sans-serif;
     }
-
+  
     .name-tShirt2 {
-        font-size: 1.4rem;
-        font-family: 'Ubuntu', sans-serif;
+      font-size: 1.4rem;
+      font-family: 'Ubuntu', sans-serif;
     }
-
+  
     .name-tShirt3 {
-        font-size: 1.4rem;
-        font-family: 'Ubuntu', sans-serif;
+      font-size: 1.4rem;
+      font-family: 'Ubuntu', sans-serif;
     }
-
+  
     .name-tShirt4 {
-        font-size: 1.4rem;
-        font-family: 'Ubuntu', sans-serif;
+      font-size: 1.4rem;
+      font-family: 'Ubuntu', sans-serif;
     }
-
+  
     .product-price-home1 {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
-
+  
     .product-price-home2 {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
-
+  
     .product-price-home3 {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
-
+  
     .product-price-home4 {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
-
-
-}
+  
+  
+  /* mq */
+  @media screen and (max-width: 500px) {
+  
+    /*encabezado*/
+    .promoEncabezado {
+      font-size: medium;
+    }
+  
+    .imagen-encabezado {
+      width: 7rem;
+    }
+  
+    nav ul li a {
+      font-size: 1rem;
+    }
+  
+    /*fin encabezado*/
+    /*main*/
+    .mainGridIndex {
+      display: grid;
+      justify-content: center;
+      margin: 10px;
+      gap: 10px;
+    }
+  
+    .destacados-text {
+      display: grid;
+      justify-content: center;
+      font-size: 2rem;
+    }
+  
+    /*destacados*/
+    .sectionGrid {
+      display: grid;
+      grid-row-gap: 5px;
+      grid-template-areas: "img1"
+        "name1"
+        "price1"
+        "img2"
+        "name2"
+        "price2"
+        "img3"
+        "name3"
+        "price3"
+        "img4"
+        "name4"
+        "price4";
+    }
+  
+    .imgProducto1 {
+      width: 200px;
+    }
+  
+    .imgProducto2 {
+      width: 200px;
+    }
+  
+    .imgProducto3 {
+      width: 200px;
+    }
+  
+    .imgProducto4 {
+      width: 200px;
+    }
+  
+    .name-product1 {
+      font-size: 1.4rem;
+    }
+  
+    .name-product2 {
+      font-size: 1.4rem;
+    }
+  
+    .name-product3 {
+      font-size: 1.4rem;
+    }
+  
+    .name-product4 {
+      font-size: 1.4rem;
+    }
+  
+    .product-price-home1 {
+      font-size: 1.3rem;
+      margin: 0px 0px 40px 0px;
+    }
+  
+    .product-price-home2 {
+      font-size: 1.3rem;
+      margin: 0px 0px 40px 0px;
+    }
+  
+    .product-price-home3 {
+      font-size: 1.3rem;
+      margin: 0px 0px 40px 0px;
+    }
+  
+    .product-price-home4 {
+      font-size: 1.3rem;
+      margin: 0px 0px 40px 0px;
+    }
+  
+    /*fin de destacados*/
+    /*footer*/
+    footer {
+      background-color: grey;
+      display: grid;
+      justify-items: center;
+    }
+  
+    .derechos {
+      background-color: grey;
+      color: black;
+      font-size: 0.9rem;
+    }
+  }

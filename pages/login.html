@@ -15,57 +15,51 @@
 <body>
     <header class="encabezado">
         <p class="promoEncabezado">ENVIO GRATIS APARTIR DE $20000</p>
-
-        <nav>
-
+        <nav class="nav">
             <img src="../img/logooriginal.png" alt="logo de la tienda" class="imagen-encabezado">
 
             <ul class="navbar">
-                <li><a class="headerLinks" href="productos.html">PRODUCTOS</a></li>
-                <li><a class="headerLinks" href="stores.html">STORES</a></li>
-                <li><a class="headerLinks" href="../index.html">HOME</a></li>
-                <li><a class="headerLinks" href="login.html">LOGIN</a></li>
-            </ul>
 
+                <li><a class="headerLinks" href="./productos.html">PRODUCTOS</a></li>
+                <li><a class="headerLinks" href="./stores.html">STORES</a></li>
+                <li><a class="headerLinks" href="../index.html">HOME</a></li>
+                <li><a class="headerLinks" href="./login.html">LOGIN</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
 
+        <p class="textLogin">HOME  > MI CUENTA  > LOGIN</p>
+
         <h1 class="h1Login">INICIA SESIÓN</h1>
-        <section class="loginSection">
-            <div class="imgLogin">
-                <img src="../img/loginImg.png" alt="monkey" class="imgLogin1">
-            </div>
+
+        <section>
 
             <form class="form">
                 <fieldset>
                     <div>
-                        <label for="usuario" class="text1Form">Email</label>
-                        <input type="mail" name="usuario" class="">
-                    </div>
-                    <div>
-                        <label for="contraseña" class="text2Form">Contraseña</label>
-                        <input type="text" name="contraseña">
+                        <label for="usuario" class="textForm">Email</label>
+                        <input type="mail" name="usuario" class="mail">
                     </div>
 
-                    <input type="submit" value="Enviar" class="sendForm">
+                    <div>
+                        <label for="contraseña" class="textForm">Contraseña</label>
+                        <input type="text" name="contraseña" class="password">
+                    </div>
+
+                    <input type="submit" value="INICIAR SESIÓN" class="sendForm">
                 </fieldset>
             </form>
+
+            <p class="textLoginR">¿no tienes cuenta aún? <a href="./register.html" class="linkR"> crear cuenta</a></p>
         </section>
     </main>
 
     <footer>
-        <div>
-            <p class="derechos">&copy todos los derechos reservados.king of the kongo-2022.diseño por Alejo Alvarez</p>
-        </div>
 
+        <h3 class="titleFooter">Categorías</h3>
         <section class="sectionFooter">
-
-            <div class="imgFooter">
-                <img src="../img/footer.gif" alt="imgFooter">
-            </div>
-
             <div>
                 <nav class="navFooter">
                     <ul>
@@ -74,11 +68,18 @@
                         <li><a class="footerLinks" href="./camperas.html">Camperas</a></li>
                         <li><a class="footerLinks" href="./stores.html">Tiendas</a></li>
                         <li><a class="footerLinks" href="../index.html">Home</a></li>
+                        <li><a class="footerLinks" href="./login.html">login</a></li>
                     </ul>
                 </nav>
             </div>
+            <div>
+                <img src="../img/footer.gif" alt="imgFooter" class="imgFooter">
+            </div>
         </section>
 
+        <div>
+            <p class="derechos">&copy todos los derechos reservados.king of the kongo-2022.diseño por Alejo Alvarez</p>
+        </div>
 
     </footer>
 
