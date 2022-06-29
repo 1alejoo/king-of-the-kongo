@@ -1,58 +1,75 @@
-
 //login
 
 
-.textLogin{
+.textLogin {
   display: flex;
   justify-content: space-around;
   margin: 15px;
 }
 
-.h1Login{
+.h1Login {
   display: flex;
   justify-content: space-around;
   margin: 0px 0px 50px 0px;
 }
 
-.form{
-display: flex;
-justify-content: space-around;
-
-.textForm{
-  font-size: 1.2rem;
-}
-
-.mail{
-display: flex;
-padding: 0px 50px;
-}
-
-.password{
+.form {
   display: flex;
-padding: 0px 50px;
+  justify-content: space-around;
+
+  .textForm {
+    font-size: 1.2rem;
+  }
+
+  .mail {
+    display: flex;
+    padding: 0px 50px;
+  }
+
+  .password {
+    display: flex;
+    padding: 0px 50px;
+  }
+
+  .sendForm {
+    background-color: black;
+    color: white;
+    margin: 15px 0px 0px 0px;
+
+  }
 }
 
-.sendForm{
-  background-color: black;
-  color: white;
-  margin: 15px 0px 0px 0px;
-
-}
-}
-
-.textLoginR{
+.textLoginR {
   display: flex;
   justify-content: center;
   margin: 15px 0px 150px 0px;
 }
 
-.linkR{
+.linkR {
   margin: 0px 10px;
-  color:black;
+  color: black;
   text-decoration: none;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.linkR:hover{
+.linkR:hover {
   color: grey;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .textLogin {
+    font-size: 1.2rem;
+  }
+
+  .form {
+    .textForm {
+      font-size: 1.3rem;
+    }
+  }
+
+  .textLoginR {
+    font-size: 1.3rem;
+  }
 }

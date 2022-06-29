@@ -1,0 +1,62 @@
+/*Pagina del producto*/
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px 0px 0px;
+  
+  
+    .ProductoImgPage {
+      width: 30rem;
+    }
+  
+    .Atext {
+      margin: 15px 0px 15px 0px
+    }
+  
+    .Price {
+      font-size: 1.5rem;
+      margin: 15px 0px 15px 0px;
+    }
+  
+    .Dues {
+      color: red;
+      font-size: 1.3rem;
+      margin: 0px 0px 20px 0px;
+    }
+  
+    .send-Product {
+      background-color: black;
+      color: white;
+      font-size: 1.4rem;
+      padding: 5px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    
+    .product {
+        display: grid;
+
+        .ProductoImgPage {
+          width: 20rem;
+        }
+        .send-Product{
+            margin: 0px 0px 50px 0px;
+        }
+      }
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 768px){
+    .product {
+        display: grid;
+
+        .ProductoImgPage {
+          width: 20rem;
+        }
+        .send-Product{
+            margin: 0px 0px 50px 0px;
+        }
+      }
+  }
+  

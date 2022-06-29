@@ -1,203 +1,9 @@
-/* mq */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
-@media screen and (max-width: 500px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; }
-  body {
-    background-color: rgba(206, 203, 203, 0.507); }
-  .encabezado {
-    background-color: white; }
-  .encabezado .promoEncabezado {
-    color: white;
-    background-color: black;
-    font-family: "Ubuntu", sans-serif;
-    display: flex;
-    justify-content: space-around; }
-  .encabezado .nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white; }
-  .encabezado .nav .imagen-encabezado {
-    background-color: white;
-    width: 9rem; }
-  .encabezado .nav .navbar {
-    background-color: white;
-    list-style: none;
-    display: flex;
-    gap: 1.3rem; }
-  .encabezado .nav .navbar .headerLinks {
-    background-color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: black;
-    font-family: "Ubuntu", sans-serif; }
-  .encabezado .nav .navbar .headerLinks:hover {
-    color: grey;
-    display: block; }
-  .fondo1 {
-    display: flex;
-    justify-content: space-around;
-    height: 47rem; }
-  .destacados-text {
-    display: flex;
-    justify-content: space-around;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 2.7rem;
-    margin: 50px 0px 10px 0px; }
-  .container1H {
-    display: flex;
-    justify-content: space-around; }
-    .container1H .imgProducto {
-      width: 200px; }
-    .container1H .name-product {
-      font-size: 1.5rem; }
-    .container1H .product-price {
-      font-size: 1.4rem; }
-  .container2H {
-    display: flex;
-    justify-content: space-around; }
-    .container2H .imgProducto {
-      width: 250px; }
-    .container2H .name-product {
-      font-size: 1.5rem; }
-    .container2H .product-price {
-      font-size: 1.4rem; }
-  footer {
-    background-color: grey; }
-    footer .titleFooter {
-      font-family: "Ubuntu", sans-serif; }
-    footer .sectionFooter {
-      display: flex; }
-      footer .sectionFooter .navFooter {
-        background-color: grey; }
-        footer .sectionFooter .navFooter .footerLinks {
-          text-decoration: none;
-          color: black;
-          font-size: 1rem; }
-      footer .sectionFooter .imgFooter {
-        height: 10rem;
-        margin: 0px 0px 0px 500px; }
-    footer .derechos {
-      background-color: grey;
-      color: black;
-      font-size: 1rem;
-      display: flex;
-      justify-content: end; }
-  .mainStores {
-    display: flex;
-    justify-content: center;
-    margin: 15px;
-    font-family: "Ubuntu", sans-serif; }
-  .mapText {
-    display: flex;
-    justify-content: center; }
-  .map {
-    display: flex;
-    justify-content: center;
-    margin: 0px 0px 60px 0px; }
-  .product {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px 0px 0px 0px; }
-    .product .ProductoImgPage {
-      width: 30rem; }
-    .product .Atext {
-      margin: 15px 0px 15px 0px; }
-    .product .Price {
-      font-size: 1.5rem;
-      margin: 15px 0px 15px 0px; }
-    .product .Dues {
-      color: red;
-      font-size: 1.3rem;
-      margin: 0px 0px 20px 0px; }
-    .product .send-Product {
-      background-color: black;
-      color: white;
-      font-size: 1.4rem;
-      padding: 5px; }
-  .mainProductos {
-    display: flex;
-    justify-content: space-around;
-    margin: 15px 0px 0px 0px; }
-  .padreLinkImg {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px; }
-  .textLogin {
-    display: flex;
-    justify-content: space-around;
-    margin: 15px; }
-  .h1Login {
-    display: flex;
-    justify-content: space-around;
-    margin: 0px 0px 50px 0px; }
-  .form {
-    display: flex;
-    justify-content: space-around; }
-    .form .textForm {
-      font-size: 1.2rem; }
-    .form .mail {
-      display: flex;
-      padding: 0px 50px; }
-    .form .password {
-      display: flex;
-      padding: 0px 50px; }
-    .form .sendForm {
-      background-color: black;
-      color: white;
-      margin: 15px 0px 0px 0px; }
-  .textLoginR {
-    display: flex;
-    justify-content: center;
-    margin: 15px 0px 150px 0px; }
-  .linkR {
-    margin: 0px 10px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold; }
-  .linkR:hover {
-    color: grey; }
-  .h1Camperas {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px 0px 10px 0px; }
-  .container1C {
-    display: flex;
-    justify-content: space-around; }
-  .container2C {
-    display: flex;
-    justify-content: space-around; }
-  .imgCamperas {
-    width: 250px; }
-  .name-Campera {
-    font-size: 1.5rem; }
-  .product-price {
-    font-size: 1.4rem; }
-  .h1Remeras {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px 0px 10px 0px; }
-  .container1R {
-    display: flex;
-    justify-content: space-around; }
-  .container2R {
-    display: flex;
-    justify-content: space-around; }
-  .imgRemeron {
-    width: 250px; }
-  .name-product {
-    font-size: 1.5rem; }
-  .product-price {
-    font-size: 1.4rem; } }
-
 .h1Camperas {
   display: flex;
   justify-content: space-around;
-  margin: 30px 0px 10px 0px; }
+  margin: 30px 0px 30px 0px; }
 
 .container1C {
   display: flex;
@@ -216,10 +22,19 @@
 .product-price {
   font-size: 1.4rem; }
 
+@media screen and (max-width: 576px) {
+  .h1Camperas {
+    font-size: 2.5rem;
+    margin: 30px 0px 20px 0px; }
+  .container1C {
+    display: grid; }
+  .container2C {
+    display: grid; } }
+
 .h1Remeras {
   display: flex;
   justify-content: space-around;
-  margin: 30px 0px 10px 0px; }
+  margin: 30px 0px 30px 0px; }
 
 .container1R {
   display: flex;
@@ -237,6 +52,15 @@
 
 .product-price {
   font-size: 1.4rem; }
+
+@media screen and (max-width: 576px) {
+  .h1Remeras {
+    font-size: 2.5rem;
+    margin: 30px 0px 20px 0px; }
+  .container1R {
+    display: grid; }
+  .container2R {
+    display: grid; } }
 
 .textLogin {
   display: flex;
@@ -278,6 +102,14 @@
 .linkR:hover {
   color: grey; }
 
+@media screen and (max-width: 768px) {
+  .textLogin {
+    font-size: 1.2rem; }
+  .form .textForm {
+    font-size: 1.3rem; }
+  .textLoginR {
+    font-size: 1.3rem; } }
+
 .encabezado {
   background-color: white; }
 
@@ -315,6 +147,44 @@
   color: grey;
   display: block; }
 
+/*Pagina del producto*/
+.product {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0px 0px 0px; }
+  .product .ProductoImgPage {
+    width: 30rem; }
+  .product .Atext {
+    margin: 15px 0px 15px 0px; }
+  .product .Price {
+    font-size: 1.5rem;
+    margin: 15px 0px 15px 0px; }
+  .product .Dues {
+    color: red;
+    font-size: 1.3rem;
+    margin: 0px 0px 20px 0px; }
+  .product .send-Product {
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    padding: 5px; }
+
+@media screen and (max-width: 576px) {
+  .product {
+    display: grid; }
+    .product .ProductoImgPage {
+      width: 20rem; }
+    .product .send-Product {
+      margin: 0px 0px 50px 0px; } }
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .product {
+    display: grid; }
+    .product .ProductoImgPage {
+      width: 20rem; }
+    .product .send-Product {
+      margin: 0px 0px 50px 0px; } }
+
 /*import*/
 /*reset*/
 * {
@@ -329,7 +199,15 @@ body {
 .fondo1 {
   display: flex;
   justify-content: space-around;
-  height: 47rem; }
+  height: 40rem; }
+
+@media screen and (max-width: 576px) {
+  .fondo1 {
+    height: 16rem; } }
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .fondo1 {
+    height: 20rem; } }
 
 .destacados-text {
   display: flex;
@@ -359,6 +237,16 @@ body {
   .container2H .product-price {
     font-size: 1.4rem; }
 
+@media screen and (max-width: 576px) {
+  .container1H {
+    display: grid;
+    justify-content: center; }
+  .imgProducto {
+    width: 150px; }
+  .container2H {
+    display: grid;
+    justify-content: center; } }
+
 /*footer*/
 footer {
   background-color: grey; }
@@ -386,6 +274,30 @@ footer {
     display: flex;
     justify-content: end; }
 
+@media screen and (max-width: 576px) {
+  footer .titleFooter {
+    font-size: 1.7rem;
+    margin: 15px; }
+  footer .sectionFooter .navFooter .footerLinks {
+    font-size: 1.5rem; }
+  footer .sectionFooter .imgFooter {
+    height: 13rem;
+    margin: 0px 0px 0px 10px; }
+  footer .derechos {
+    font-size: 0.9rem; } }
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  footer .titleFooter {
+    font-size: 1.7rem;
+    margin: 15px; }
+  footer .sectionFooter .navFooter .footerLinks {
+    font-size: 1.5rem; }
+  footer .sectionFooter .imgFooter {
+    height: 13rem;
+    margin: 0px 0px 0px 10px; }
+  footer .derechos {
+    font-size: 1rem; } }
+
 /*stores*/
 .mainStores {
   display: flex;
@@ -402,28 +314,6 @@ footer {
   justify-content: center;
   margin: 0px 0px 60px 0px; }
 
-/*Pagina del producto*/
-.product {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px 0px 0px 0px; }
-  .product .ProductoImgPage {
-    width: 30rem; }
-  .product .Atext {
-    margin: 15px 0px 15px 0px; }
-  .product .Price {
-    font-size: 1.5rem;
-    margin: 15px 0px 15px 0px; }
-  .product .Dues {
-    color: red;
-    font-size: 1.3rem;
-    margin: 0px 0px 20px 0px; }
-  .product .send-Product {
-    background-color: black;
-    color: white;
-    font-size: 1.4rem;
-    padding: 5px; }
-
 /*productos*/
 .mainProductos {
   display: flex;
@@ -434,3 +324,15 @@ footer {
   display: flex;
   justify-content: space-around;
   margin: 30px; }
+
+@media screen and (max-width: 576px) {
+  .padreLinkImg {
+    display: grid; }
+    .padreLinkImg .imgLinkProduct {
+      margin: 15px; } }
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .padreLinkImg {
+    display: grid; }
+    .padreLinkImg .imgLinkProduct {
+      margin: 15px; } }

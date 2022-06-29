@@ -1,9 +1,9 @@
 //variables
-@import "./utilities/mediaq";
 @import "./utilities/camperaYremeras";
 @import "./utilities/login";
 @import "./utilities/variables";
 @import "./utilities/header";
+@import "./utilities/pagProductos";
 
 
 /*import*/
@@ -29,7 +29,19 @@ body {
 .fondo1 {
   display: flex;
   justify-content: space-around;
-  height: 47rem;
+  height: 40rem;
+}
+
+@media screen and (max-width: 576px)  {
+  .fondo1 {
+    height: 16rem;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .fondo1 {
+    height: 20rem;
+  }
 }
 
 .destacados-text {
@@ -77,6 +89,22 @@ body {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .container1H {
+    display: grid;
+    justify-content: center;
+  }
+
+  .imgProducto {
+    width: 150px;
+  }
+
+  .container2H {
+    display: grid;
+    justify-content: center;
+  }
+}
+
 
 /*footer*/
 
@@ -99,10 +127,11 @@ footer {
         color: black;
         font-size: 1rem;
       }
-      .footerLinks:hover{
+
+      .footerLinks:hover {
         color: black;
-        display: block; 
-        font-weight:bold;
+        display: block;
+        font-weight: bold;
       }
     }
 
@@ -122,6 +151,63 @@ footer {
 
 }
 
+@media screen and (max-width: 576px) {
+  footer {
+
+    .titleFooter {
+      font-size: 1.7rem;
+      margin: 15px;
+    }
+
+    .sectionFooter {
+
+      .navFooter {
+
+        .footerLinks {
+          font-size: 1.5rem;
+        }
+      }
+
+      .imgFooter {
+        height: 13rem;
+        margin: 0px 0px 0px 10px;
+      }
+    }
+
+    .derechos {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px)  {
+  footer {
+
+    .titleFooter {
+      font-size: 1.7rem;
+      margin: 15px;
+    }
+
+    .sectionFooter {
+
+      .navFooter {
+
+        .footerLinks {
+          font-size: 1.5rem;
+        }
+      }
+
+      .imgFooter {
+        height: 13rem;
+        margin: 0px 0px 0px 10px;
+      }
+    }
+
+    .derechos {
+      font-size: 1rem;
+    }
+  }
+}
 
 /*stores*/
 
@@ -143,41 +229,6 @@ footer {
   margin: 0px 0px 60px 0px;
 }
 
-/*Pagina del producto*/
-
-.product {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px 0px 0px 0px;
-
-
-  .ProductoImgPage {
-    width: 30rem;
-  }
-
-  .Atext {
-    margin: 15px 0px 15px 0px
-  }
-
-  .Price {
-    font-size: 1.5rem;
-    margin: 15px 0px 15px 0px;
-  }
-
-  .Dues {
-    color: red;
-    font-size: 1.3rem;
-    margin: 0px 0px 20px 0px;
-  }
-
-  .send-Product {
-    background-color: black;
-    color: white;
-    font-size: 1.4rem;
-    padding: 5px;
-  }
-}
-
 /*productos*/
 
 .mainProductos {
@@ -190,4 +241,24 @@ footer {
   display: flex;
   justify-content: space-around;
   margin: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .padreLinkImg {
+    display: grid;
+
+    .imgLinkProduct{
+      margin: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .padreLinkImg {
+    display: grid;
+
+    .imgLinkProduct{
+      margin: 15px;
+    }
+  }
 }
